@@ -5,9 +5,11 @@ function UseEffectBasics() {
     useEffect(()=>
     {
         console.log('call UseEffect');
-        document.title=`New Messages(${value})`;
-    });
-    console.log('render component');
+        if(value>=1)/*if condition can't be used outside the hook*/{
+        document.title=`New Messages(${value})`;}
+    },[value]);
+
+    console.log('render component')
     return (
         <>
             <h1>{value}</h1>
