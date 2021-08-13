@@ -1,15 +1,19 @@
-import React, { useState } from 'react'
-import { data } from "../data";
+import React,{useState} from 'react'
+import {data} from "../data";
+import { Link } from "react-router-dom";
 function People() {
-    const [people, setPeople] = useState(data);
+    const [people,setPeople]=useState(data);
     return (
         <div>
             <h1>People Page</h1>
-            {people.map((person) => {
-                return (
+            {people.map((person)=>{
+                return(
                     <div key={person.id} className='item'>
                         <h4>{person.name}</h4>
-                    </div>
+                        <Link to={`/person/${person.id}`}>
+                            Learn More
+                        </Link>
+                        </div>
                 );
             })}
         </div>
