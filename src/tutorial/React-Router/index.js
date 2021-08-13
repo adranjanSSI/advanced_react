@@ -12,19 +12,21 @@ switch to enable or disable our router.*/
 function ReactRouterDom() {
     return (
         <Router>
-            <Route path="/">
+            <NavBar/>
+            <Switch>
+            <Route exact path="/">{/*exact is used so that */}
                 <Home/>
             </Route>
             <Route path="/about">
                 <About/>
             </Route>
-            <Route path="/error">
+            <Route path="*">
                 <Error/>
             </Route>
             <Route path="/people">
                 <People/>
             </Route>
-            
+            </Switch>
             
         </Router>
     )
