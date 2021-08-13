@@ -20,11 +20,12 @@ function ReactRouterDom() {
             <Route path="/about">
                 <About/>
             </Route>
-            <Route path="*">
-                <Error/>
-            </Route>
+            
             <Route path="/people">
                 <People/>
+            </Route>
+            <Route path="*">
+                <Error/>
             </Route>
             </Switch>
             
