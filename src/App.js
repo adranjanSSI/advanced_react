@@ -7,11 +7,12 @@ import React from "react"
 //import UseEffectBasics from "./tutorial/UseEffectBasics";
 //import Forms from "./tutorial/Forms.js"
 //import LearnJSON from "./tutorial/LearnJSON";
-import Index from "./tutorial/Reducer/index";
+//import Index from "./tutorial/Reducer/index";
+import ReactRouterDom from "./tutorial/React-Router";
 function App() {
   return (
     <div className="container">
-      <Index />
+      <ReactRouterDom />
     </div>
   );
 }
