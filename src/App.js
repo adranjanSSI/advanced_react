@@ -10,11 +10,12 @@ import React from "react"
 //import Index from "./tutorial/Reducer/index";
 //import ReactRouterDom from "./tutorial/React-Router";
 //import PropDrilling from "./tutorial/PropDrilling.js";
-import ContextAPI from "./tutorial/ContextAPI";
+//import ContextAPI from "./tutorial/ContextAPI";
+import Ibutton from "./Increbutton"
 function App() {
   return (
     <div className="container">
-      <ContextAPI />
+      <Ibutton />
     </div>
   );
 }
